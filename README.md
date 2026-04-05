@@ -1,10 +1,5 @@
 # 🏠 Smart Home MQTT Monitoring System — Node-RED
 
-**Student Name:** Akshaya  
-**Assignment:** Publish-Subscribe System using Node-RED and MQTT  
-**Broker:** HiveMQ Public Broker (`broker.hivemq.com:1883`)  
-**Due Date:** 8th Feb 2026
-
 ---
 
 ## 📋 Overview
