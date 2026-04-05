@@ -1,0 +1,524 @@
+[
+    {
+        "id": "6820eaa3e12609a8",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "mqtt-broker-config",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Public",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "nodered-smarthome-lab",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "home/status",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "offline",
+        "closeMsg": {},
+        "willTopic": "home/status",
+        "willQos": "1",
+        "willRetain": true,
+        "willPayload": "offline",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "bf850921477bb5dc",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "home_akshaya_12345",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dashboard-tab",
+        "type": "ui_tab",
+        "name": "Smart Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dashboard-group",
+        "type": "ui_group",
+        "name": "Smart Home Monitor",
+        "tab": "dashboard-tab",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d63ad4efc3255440",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "home_akshaya_client_001",
+        "usetls": false,
+        "keepalive": "60",
+        "cleansession": true
+    },
+    {
+        "id": "dashboard_tab",
+        "type": "ui_tab",
+        "name": "Smart Home",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "dashboard_group",
+        "type": "ui_group",
+        "name": "Smart Home Monitor",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "12"
+    },
+    {
+        "id": "inject1",
+        "type": "inject",
+        "z": "6820eaa3e12609a8",
+        "name": "Every 5s",
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "func_temp"
+            ]
+        ]
+    },
+    {
+        "id": "func_temp",
+        "type": "function",
+        "z": "6820eaa3e12609a8",
+        "name": "Temperature Publisher",
+        "func": "var temp = (20 + Math.random() * 10).toFixed(1);\nvar humidity = (40 + Math.random() * 30).toFixed(1);\n\nmsg.payload = JSON.stringify({\n    sensor: \"temp_01\",\n    temperature: parseFloat(temp),\n    humidity: parseFloat(humidity),\n    unit: \"celsius\",\n    timestamp: new Date().toISOString()\n});\nmsg.topic = \"home_akshaya/livingroom/temperature\";\nmsg.qos = 1;\nmsg.retain = false;\nreturn msg;",
+        "outputs": 1,
+        "x": 520,
+        "y": 180,
+        "wires": [
+            [
+                "mqtt_temp"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_temp",
+        "type": "mqtt out",
+        "z": "6820eaa3e12609a8",
+        "name": "Publish Temp",
+        "topic": "home_akshaya/livingroom/temperature",
+        "qos": "1",
+        "retain": "false",
+        "broker": "mqtt_broker",
+        "x": 740,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "inject2",
+        "type": "inject",
+        "z": "6820eaa3e12609a8",
+        "name": "Every 7s",
+        "repeat": "7",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "func_motion"
+            ]
+        ]
+    },
+    {
+        "id": "func_motion",
+        "type": "function",
+        "z": "6820eaa3e12609a8",
+        "name": "Motion Publisher",
+        "func": "var motionStates = [\"detected\", \"clear\"];\nvar status = motionStates[Math.floor(Math.random() * 2)];\n\nmsg.payload = JSON.stringify({\n    sensor: \"motion_01\",\n    status: status,\n    location: \"livingroom\",\n    timestamp: new Date().toISOString()\n});\nmsg.topic = \"home_akshaya/livingroom/motion\";\nmsg.qos = 1;\nmsg.retain = false;\nreturn msg;",
+        "outputs": 1,
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "mqtt_motion"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_motion",
+        "type": "mqtt out",
+        "z": "6820eaa3e12609a8",
+        "name": "Publish Motion",
+        "topic": "home_akshaya/livingroom/motion",
+        "qos": "1",
+        "retain": "false",
+        "broker": "mqtt_broker",
+        "x": 740,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "inject3",
+        "type": "inject",
+        "z": "6820eaa3e12609a8",
+        "name": "Status Online",
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "func_status"
+            ]
+        ]
+    },
+    {
+        "id": "func_status",
+        "type": "function",
+        "z": "6820eaa3e12609a8",
+        "name": "Status Function",
+        "func": "msg.payload = JSON.stringify({\n    status: \"online\",\n    timestamp: new Date().toISOString()\n});\nmsg.topic = \"home_akshaya/status\";\nmsg.qos = 1;\nmsg.retain = true;\nreturn msg;",
+        "outputs": 1,
+        "x": 520,
+        "y": 340,
+        "wires": [
+            [
+                "mqtt_status"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_status",
+        "type": "mqtt out",
+        "z": "6820eaa3e12609a8",
+        "name": "Status Publisher",
+        "topic": "home_akshaya/status",
+        "qos": "1",
+        "retain": "true",
+        "broker": "mqtt_broker",
+        "x": 740,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "mqtt_sub",
+        "type": "mqtt in",
+        "z": "6820eaa3e12609a8",
+        "name": "Wildcard Subscriber home_akshaya/#",
+        "topic": "home_akshaya/#",
+        "qos": "1",
+        "broker": "mqtt_broker",
+        "inputs": 0,
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "func_parse"
+            ]
+        ]
+    },
+    {
+        "id": "func_parse",
+        "type": "function",
+        "z": "6820eaa3e12609a8",
+        "name": "Parse & Route",
+        "func": "var data;\ntry {\n    data = JSON.parse(msg.payload);\n} catch (e) {\n    data = msg.payload;\n}\n\nvar out1 = null, out2 = null, out3 = null;\n\nif (msg.topic.includes(\"temperature\")) {\n    var temp = parseFloat(data.temperature);\n    if (!isNaN(temp)) {\n        out1 = {\n            payload: temp,\n            topic: \"Temperature\",\n            timestamp: new Date().getTime()\n        };\n    }\n} else if (msg.topic.includes(\"motion\")) {\n    out2 = {\n        payload: data.status === \"detected\" ? 1 : 0,\n        topic: msg.topic,\n        status: data.status\n    };\n}\n\nout3 = {\n    payload: \"[\" + msg.topic + \"] \" + JSON.stringify(data),\n    topic: msg.topic\n};\n\nreturn [out1, out2, out3];",
+        "outputs": 3,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 500,
+        "wires": [
+            [
+                "gauge_temp",
+                "chart_temp"
+            ],
+            [
+                "func_motion_text"
+            ],
+            [
+                "text_log"
+            ]
+        ]
+    },
+    {
+        "id": "gauge_temp",
+        "type": "ui_gauge",
+        "z": "6820eaa3e12609a8",
+        "name": "Temperature Gauge",
+        "group": "dashboard_group",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Living Room Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 50,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 880,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "chart_temp",
+        "type": "ui_chart",
+        "z": "6820eaa3e12609a8",
+        "name": "Temperature Chart",
+        "group": "dashboard_group",
+        "order": 2,
+        "width": 12,
+        "height": 4,
+        "label": "Temperature Over Time",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "15",
+        "ymax": "30",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 880,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "func_motion_text",
+        "type": "function",
+        "z": "6820eaa3e12609a8",
+        "name": "Motion to Text",
+        "func": "if (msg.payload === 1) {\n    msg.payload = \"Motion DETECTED\";\n} else {\n    msg.payload = \"No Motion\";\n}\nreturn msg;",
+        "outputs": 1,
+        "x": 880,
+        "y": 520,
+        "wires": [
+            [
+                "text_motion"
+            ]
+        ]
+    },
+    {
+        "id": "text_motion",
+        "type": "ui_text",
+        "z": "6820eaa3e12609a8",
+        "group": "dashboard_group",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Motion Status",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1080,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "text_log",
+        "type": "ui_text",
+        "z": "6820eaa3e12609a8",
+        "group": "dashboard_group",
+        "order": 4,
+        "width": 12,
+        "height": 2,
+        "name": "Message Log",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 880,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "c9d4bee31e4b30f4",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
