@@ -90,13 +90,7 @@ Receives all messages published under `home_akshaya/` in a single subscription.
 
 ---
 
-## Screenshots
 
-### Node-RED Flow
-![Flow](flow.png)
-
-### Dashboard
-![Dashboard](dashboard.png)
 
 ---
 
