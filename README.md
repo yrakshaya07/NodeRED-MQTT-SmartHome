@@ -1,14 +1,14 @@
-# 🏠 Smart Home MQTT Monitoring System — Node-RED
+#  Smart Home MQTT Monitoring System — Node-RED
 
 ---
 
-## 📋 Overview
+##  Overview
 
 This project implements a **Smart Home Monitoring System** using Node-RED and MQTT pub-sub architecture. It simulates two IoT sensors (temperature and motion) publishing live data to an MQTT broker, with a wildcard subscriber routing messages to a real-time dashboard.
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 Publishers                    Broker                  Subscriber
@@ -20,7 +20,7 @@ Publishers                    Broker                  Subscriber
 
 ---
 
-## 📡 MQTT Topics
+##  MQTT Topics
 
 | Topic | Publisher | QoS | Retained | Description |
 |-------|-----------|-----|----------|-------------|
@@ -32,7 +32,7 @@ Publishers                    Broker                  Subscriber
 
 ---
 
-## 🔧 Node-RED Flow Description
+##  Node-RED Flow Description
 
 ### Publishers (Flow 1)
 
@@ -68,7 +68,7 @@ Publishers                    Broker                  Subscriber
 
 ---
 
-## 📊 Dashboard Components
+##  Dashboard Components
 
 | Widget | Data Source | Description |
 |--------|-------------|-------------|
@@ -79,7 +79,7 @@ Publishers                    Broker                  Subscriber
 
 ---
 
-## 💻 Function Node Code
+##  Function Node Code
 
 ### Temperature Publisher
 ```javascript
@@ -172,7 +172,7 @@ return msg;
 
 ---
 
-## 📨 Sample Message Log
+##  Sample Message Log
 
 ```
 [home_akshaya/livingroom/temperature] {"sensor":"temp_01","temperature":24.3,"humidity":58.2,"unit":"celsius","timestamp":"2026-04-05T06:28:10.123Z"}
@@ -184,7 +184,7 @@ return msg;
 
 ---
 
-## 🔁 QoS vs Retained Messages
+##  QoS vs Retained Messages
 
 | Feature | Value | Effect |
 |---------|-------|--------|
@@ -199,7 +199,7 @@ In this project:
 
 ---
 
-## 🌐 How Wildcards Work
+##  How Wildcards Work
 
 The wildcard subscriber `home_akshaya/#` matches:
 - `home_akshaya/livingroom/temperature` ✅
@@ -211,7 +211,7 @@ This means **one subscriber handles all sensors** — no need for separate subsc
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Node-RED installed (`npm install -g node-red`)
@@ -232,7 +232,7 @@ This means **one subscriber handles all sensors** — no need for separate subsc
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 smart-home-nodered/
@@ -245,7 +245,7 @@ smart-home-nodered/
 
 ---
 
-## 🎓 Concepts Demonstrated
+##  Concepts Demonstrated
 
 - **Publish-Subscribe Pattern** — Publishers and subscribers are decoupled
 - **MQTT Protocol** — Lightweight IoT messaging protocol
