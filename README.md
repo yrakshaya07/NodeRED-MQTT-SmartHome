@@ -6,7 +6,7 @@
 ## Objective
 To design and implement a publish-subscribe system using Node-RED and MQTT 
 broker that monitors smart home sensors and visualizes live data on a dashboard.
-
+ 
 ---
 
 ## Tools Used
